@@ -19,7 +19,7 @@ http://bottlepy.org/docs/dev/tutorial_app.html#id1
 
 
 #This generates a database-file todo.db with tables called todo and three columns id, task, and status.
-
+'''
 import sqlite3
 conn = sqlite3.connect('todo.db') # Warning: This file is created in the current directory
 conn.execute("CREATE TABLE todo (id INTEGER PRIMARY KEY, task char(100) NOT NULL, status bool NOT NULL)")
@@ -28,11 +28,11 @@ conn.execute("INSERT INTO todo (task,status) VALUES ('Visit the Python website',
 conn.execute("INSERT INTO todo (task,status) VALUES ('Test various editors for and check the syntax highlighting',1)")
 conn.execute("INSERT INTO todo (task,status) VALUES ('Choose your favorite WSGI-Framework',0)")
 conn.commit()
+'''
 
 
 
-
-
+'''
 
 
 import sqlite3
@@ -63,10 +63,15 @@ exit()
 ##____________________________
 
 
+errror of course
+
+'''
 
 
+#   python2 todo.py    # py3 errror
 
 
+#   http://127.0.0.1:8080/todo     # no slash !        just a table without functionality
 
 import sqlite3
 from bottle import route, run, debug, template, request, static_file, error
